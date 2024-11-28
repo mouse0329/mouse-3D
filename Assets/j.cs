@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class j: MonoBehaviour
 {
-    private int touchState = 0;
+    public int touchState = 0;
 
     private void OnTriggerEnter(Collider other)
     {

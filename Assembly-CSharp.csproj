@@ -63,7 +63,6 @@
     <Compile Include="Assets\Dynamic Grass FX\Demo\Scripts\Rotate.cs" />
     <Compile Include="Assets\mouse.cs" />
     <Compile Include="Assets\CameraController.cs" />
-    <Compile Include="Assets\mouse2.cs" />
     <Compile Include="Assets\j.cs" />
   </ItemGroup>
   <ItemGroup>

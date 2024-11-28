@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class mouse : MonoBehaviour
 {
+    public j j;
     public float aa;
     float r = 0;
     public int k = 0;
@@ -12,7 +13,6 @@ public class mouse : MonoBehaviour
     public Rigidbody rb;
     public int a;
     public int s =7;
-    int j=1;
    // public GameObject j = GameObject.Find("aaa");
 
     private void Start()
@@ -68,10 +68,9 @@ public class mouse : MonoBehaviour
         {
             s = 7;
         }
-          if (Input.GetKey(KeyCode.Space) && j==1)
+          if (Input.GetKey(KeyCode.Space) && j.touchState == 1)
          {
-             rb.AddForce(0,300f,0);
-            j = 0;
+             rb.AddForce(0,50f,0);
          }
     }
     private void Rr()
@@ -90,17 +89,9 @@ public class mouse : MonoBehaviour
         {
             transform.position = new Vector3(-1123.75f, 3f, 255.72f);
         }
-        if (collision.gameObject.CompareTag("j"))
-        {
-            j = 1;
-        }
     }
 
     private void OnCollisionExit(Collision collision) 
     {
-        if (collision.gameObject.CompareTag("j"))
-        {
-            j = 0;
-        }
     }
 }
