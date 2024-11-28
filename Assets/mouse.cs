@@ -89,6 +89,10 @@ public class mouse : MonoBehaviour
         {
             transform.position = new Vector3(-1123.75f, 3f, 255.72f);
         }
+        if (collision.gameObject.CompareTag("da"))
+        {
+            transform.position = new Vector3(-69.7f, 5.13f, -63.1f);
+        }
     }
 
     private void OnCollisionExit(Collision collision) 
